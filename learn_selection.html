@@ -1,0 +1,80 @@
+<style>
+/*通配符，将整个网页设置内边距外边距为0，铺满屏幕*/
+    *{
+        padding:0;
+        margin:0;
+    }
+
+/*定义三个大块级元素的背景图，由于每个元素样式都不一样，用id选择器*/
+    #back1{
+        background:url(https://static1.bcjiaoyu.com/ad9d3d1d32741743f26b6ee2c3479273_g.jpg-1400x788) right center;/*定义背景图位置*/
+    }
+    #back2{
+        background:url(https://static1.bcjiaoyu.com/ec45983f2f00c685f15c86f2058e99fe_h.jpg-1400x788) left center;
+    }
+    #back3{
+        background:url(https://static1.bcjiaoyu.com/c26e0994bded6c5e223ce256ca8e1121_f.jpg-1400x788) left center;
+    }
+    #back1,#back2,#back3{
+        width:100%;
+        height:600px;
+    }
+
+/*三大块级元素内生成子元素，由于样式一致，用class选择器*/
+    .col1 div,.col2 div,.col3 div{
+        width:50%;
+        height:600px;
+        background:white;
+    }
+    .col2 div{
+        float:right;
+    }
+/*声明子元素内文字样式*/
+    h1{
+        font-size:30px;
+        color:rgb(42, 150, 100);
+        font-family:fantasy,serif;
+        padding:100px 0px 80px;
+        text-align:center;
+    }
+    p{
+        font-size:20px;
+        padding:0 100px;
+        text-align:right;
+        line-height:1.5em;
+    }
+</style>
+
+<html>
+    <body>
+        <div class="col1" id="back1">
+            <div>
+                <h1>夏末至上</h1>
+                <p>生活始终律动，需有光有影，有左有右，有晴有雨。<br>
+                    在最坏时候懂得吃，舍得吃，不会乱。<br>
+                    总有一天，把心愿完成，带着你飞奔找永恒。
+                </p>
+            </div>
+        </div>
+
+        <div class="col2" id="back2">
+            <div>
+                <h1>夏末至上</h1>
+                <p>生活始终律动，需有光有影，有左有右，有晴有雨。<br>
+                在最坏时候懂得吃，舍得吃，不会乱。<br>
+                总有一天，把心愿完成，带着你飞奔找永恒。
+                </p>
+            </div>
+        </div>
+
+        <div class="col1" id="back3">
+            <div>
+                <h1>夏末至上</h1>
+                <p>生活始终律动，需有光有影，有左有右，有晴有雨。<br>
+                        在最坏时候懂得吃，舍得吃，不会乱。<br>
+                        总有一天，把心愿完成，带着你飞奔找永恒。
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
