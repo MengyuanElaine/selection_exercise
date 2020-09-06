@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>打字器</title>
     <style>
+        /*通用浏览器设置，将margin和padding设为0*/
         *{
             padding:0;
             margin:0;
             font-size:100px;
         }
+        
+        /*学习如何利用弹性盒子垂直居中元素，需要固定高度100vh适应网页高度，利用uigradients网站下载网页背景代码*/
         body{
             display:flex;
             align-items:center;
@@ -18,6 +21,7 @@
             background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         }
+        
         #text{
             color:white;
             text-align:center;
@@ -26,6 +30,6 @@
     </style>
 </head>
 <body>
-    <div id="text" contenteditable="true">请编辑文字</div>
+    <div id="text" contenteditable="true">请编辑文字</div> /*学习新属性contenteditable，可在线编辑删除元素内文字*/
 </body>
 </html>
